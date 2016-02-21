@@ -1,0 +1,3192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>483</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>483</width>
+    <height>648</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>483</width>
+    <height>648</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>The Sudoku</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>461</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="spacing">
+      <number>3</number>
+     </property>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="cel_2_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QLineEdit" name="cel_0_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="QLineEdit" name="cel_1_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLineEdit" name="cel_2_0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="8">
+      <widget class="QLineEdit" name="cel_1_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLineEdit" name="cel_1_0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLineEdit" name="cel_1_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLineEdit" name="cel_3_0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLineEdit" name="cel_5_0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="cel_1_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="8">
+      <widget class="QLineEdit" name="cel_0_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="7">
+      <widget class="QLineEdit" name="cel_1_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="cel_0_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLineEdit" name="cel_7_0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLineEdit" name="cel_4_0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLineEdit" name="cel_0_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QLineEdit" name="cel_0_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLineEdit" name="cel_6_0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLineEdit" name="cel_1_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QLineEdit" name="cel_1_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="cel_2_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="cel_1_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLineEdit" name="cel_8_0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLineEdit" name="cel_0_0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="7">
+      <widget class="QLineEdit" name="cel_0_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="cel_0_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="cel_0_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="cel_2_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLineEdit" name="cel_2_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QLineEdit" name="cel_2_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <widget class="QLineEdit" name="cel_2_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="7">
+      <widget class="QLineEdit" name="cel_2_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="8">
+      <widget class="QLineEdit" name="cel_2_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="cel_3_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="cel_3_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLineEdit" name="cel_3_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLineEdit" name="cel_3_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="QLineEdit" name="cel_3_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="6">
+      <widget class="QLineEdit" name="cel_3_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="7">
+      <widget class="QLineEdit" name="cel_3_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="8">
+      <widget class="QLineEdit" name="cel_3_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="cel_4_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLineEdit" name="cel_4_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLineEdit" name="cel_4_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QLineEdit" name="cel_4_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <widget class="QLineEdit" name="cel_4_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="6">
+      <widget class="QLineEdit" name="cel_4_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="7">
+      <widget class="QLineEdit" name="cel_4_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="8">
+      <widget class="QLineEdit" name="cel_4_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="cel_5_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="cel_5_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLineEdit" name="cel_5_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="QLineEdit" name="cel_5_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="5">
+      <widget class="QLineEdit" name="cel_5_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="6">
+      <widget class="QLineEdit" name="cel_5_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="7">
+      <widget class="QLineEdit" name="cel_5_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="8">
+      <widget class="QLineEdit" name="cel_5_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="cel_6_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLineEdit" name="cel_6_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QLineEdit" name="cel_6_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="4">
+      <widget class="QLineEdit" name="cel_6_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="5">
+      <widget class="QLineEdit" name="cel_6_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="6">
+      <widget class="QLineEdit" name="cel_6_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="7">
+      <widget class="QLineEdit" name="cel_6_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="8">
+      <widget class="QLineEdit" name="cel_6_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="cel_7_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLineEdit" name="cel_7_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLineEdit" name="cel_7_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="4">
+      <widget class="QLineEdit" name="cel_7_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="5">
+      <widget class="QLineEdit" name="cel_7_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="6">
+      <widget class="QLineEdit" name="cel_7_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="7">
+      <widget class="QLineEdit" name="cel_7_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="8">
+      <widget class="QLineEdit" name="cel_7_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="cel_8_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLineEdit" name="cel_8_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QLineEdit" name="cel_8_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="4">
+      <widget class="QLineEdit" name="cel_8_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="5">
+      <widget class="QLineEdit" name="cel_8_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="6">
+      <widget class="QLineEdit" name="cel_8_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="7">
+      <widget class="QLineEdit" name="cel_8_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="8">
+      <widget class="QLineEdit" name="cel_8_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>45</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="validateButton">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>560</y>
+      <width>154</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Validar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="messages">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>490</y>
+      <width>462</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>462</width>
+      <height>52</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>462</width>
+      <height>52</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="lineH1">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>165</y>
+      <width>473</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="lineH2">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>321</y>
+      <width>473</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="lineV1">
+    <property name="geometry">
+     <rect>
+      <x>162</x>
+      <y>5</y>
+      <width>3</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="lineV2">
+    <property name="geometry">
+     <rect>
+      <x>315</x>
+      <y>5</y>
+      <width>3</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resetButton">
+    <property name="geometry">
+     <rect>
+      <x>162</x>
+      <y>560</y>
+      <width>154</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="newButton">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>560</y>
+      <width>154</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nou joc</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>483</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>cel_0_0</tabstop>
+  <tabstop>cel_0_1</tabstop>
+  <tabstop>cel_0_2</tabstop>
+  <tabstop>cel_0_3</tabstop>
+  <tabstop>cel_0_4</tabstop>
+  <tabstop>cel_0_5</tabstop>
+  <tabstop>cel_0_6</tabstop>
+  <tabstop>cel_0_7</tabstop>
+  <tabstop>cel_0_8</tabstop>
+  <tabstop>cel_1_0</tabstop>
+  <tabstop>cel_1_1</tabstop>
+  <tabstop>cel_1_2</tabstop>
+  <tabstop>cel_1_3</tabstop>
+  <tabstop>cel_1_4</tabstop>
+  <tabstop>cel_1_5</tabstop>
+  <tabstop>cel_1_6</tabstop>
+  <tabstop>cel_1_7</tabstop>
+  <tabstop>cel_1_8</tabstop>
+  <tabstop>cel_2_0</tabstop>
+  <tabstop>cel_2_1</tabstop>
+  <tabstop>cel_2_2</tabstop>
+  <tabstop>cel_2_3</tabstop>
+  <tabstop>cel_2_4</tabstop>
+  <tabstop>cel_2_5</tabstop>
+  <tabstop>cel_2_6</tabstop>
+  <tabstop>cel_2_7</tabstop>
+  <tabstop>cel_2_8</tabstop>
+  <tabstop>cel_3_0</tabstop>
+  <tabstop>cel_3_1</tabstop>
+  <tabstop>cel_3_2</tabstop>
+  <tabstop>cel_3_3</tabstop>
+  <tabstop>cel_3_4</tabstop>
+  <tabstop>cel_3_5</tabstop>
+  <tabstop>cel_3_6</tabstop>
+  <tabstop>cel_3_7</tabstop>
+  <tabstop>cel_3_8</tabstop>
+  <tabstop>cel_4_0</tabstop>
+  <tabstop>cel_4_1</tabstop>
+  <tabstop>cel_4_2</tabstop>
+  <tabstop>cel_4_3</tabstop>
+  <tabstop>cel_4_4</tabstop>
+  <tabstop>cel_4_5</tabstop>
+  <tabstop>cel_4_6</tabstop>
+  <tabstop>cel_4_7</tabstop>
+  <tabstop>cel_4_8</tabstop>
+  <tabstop>cel_5_0</tabstop>
+  <tabstop>cel_5_1</tabstop>
+  <tabstop>cel_5_2</tabstop>
+  <tabstop>cel_5_3</tabstop>
+  <tabstop>cel_5_4</tabstop>
+  <tabstop>cel_5_5</tabstop>
+  <tabstop>cel_5_6</tabstop>
+  <tabstop>cel_5_7</tabstop>
+  <tabstop>cel_5_8</tabstop>
+  <tabstop>cel_6_0</tabstop>
+  <tabstop>cel_6_1</tabstop>
+  <tabstop>cel_6_2</tabstop>
+  <tabstop>cel_6_3</tabstop>
+  <tabstop>cel_6_4</tabstop>
+  <tabstop>cel_6_5</tabstop>
+  <tabstop>cel_6_6</tabstop>
+  <tabstop>cel_6_7</tabstop>
+  <tabstop>cel_6_8</tabstop>
+  <tabstop>cel_7_0</tabstop>
+  <tabstop>cel_7_1</tabstop>
+  <tabstop>cel_7_2</tabstop>
+  <tabstop>cel_7_3</tabstop>
+  <tabstop>cel_7_4</tabstop>
+  <tabstop>cel_7_5</tabstop>
+  <tabstop>cel_7_6</tabstop>
+  <tabstop>cel_7_7</tabstop>
+  <tabstop>cel_7_8</tabstop>
+  <tabstop>cel_8_0</tabstop>
+  <tabstop>cel_8_1</tabstop>
+  <tabstop>cel_8_2</tabstop>
+  <tabstop>cel_8_3</tabstop>
+  <tabstop>cel_8_4</tabstop>
+  <tabstop>cel_8_5</tabstop>
+  <tabstop>cel_8_6</tabstop>
+  <tabstop>cel_8_7</tabstop>
+  <tabstop>cel_8_8</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

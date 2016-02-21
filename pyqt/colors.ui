@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>568</width>
+    <height>282</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>568</width>
+    <height>282</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>568</width>
+    <height>282</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Selector de color</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="colorPreview">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>110</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>110</width>
+      <height>110</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>110</width>
+      <height>110</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid rgb(204,204,204); border-radius: 4px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="colorHex">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>110</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>110</width>
+      <height>26</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>110</width>
+      <height>26</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Monospace</family>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="maxLength">
+     <number>9</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QSlider" name="redSlider">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>225</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>225</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>225</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="sliderPosition">
+     <number>0</number>
+    </property>
+    <property name="tracking">
+     <bool>true</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="invertedControls">
+     <bool>false</bool>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QSlider" name="greenSlider">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>82</y>
+      <width>225</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>225</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>225</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="blueSlider">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>150</y>
+      <width>225</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>225</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>225</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="redLabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>20</y>
+      <width>70</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: red;</string>
+    </property>
+    <property name="text">
+     <string>RED</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="greenLabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>82</y>
+      <width>70</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: green;</string>
+    </property>
+    <property name="text">
+     <string>GREEN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="blueLabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>150</y>
+      <width>70</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: blue;</string>
+    </property>
+    <property name="text">
+     <string>BLUE</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>531</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>531</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>531</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="paletaButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>422</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>422</width>
+      <height>2</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>422</width>
+      <height>27</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Paleta de colors</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sortirButton">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>220</y>
+      <width>90</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>27</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>90</width>
+      <height>27</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Sortir</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="blueDisplay">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>150</y>
+      <width>70</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(236,236,236);
+border: 1px solid rgb(204,204,204);
+border-radius: 4px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="margin">
+     <number>2</number>
+    </property>
+    <property name="indent">
+     <number>0</number>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="greenDisplay">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>82</y>
+      <width>70</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(236,236,236);
+border: 1px solid rgb(204,204,204);
+border-radius: 4px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="margin">
+     <number>2</number>
+    </property>
+    <property name="indent">
+     <number>0</number>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="redDisplay">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>20</y>
+      <width>70</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>70</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(236,236,236);
+border: 1px solid rgb(204,204,204);
+border-radius: 4px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="margin">
+     <number>2</number>
+    </property>
+    <property name="indent">
+     <number>0</number>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>redSlider</tabstop>
+  <tabstop>greenSlider</tabstop>
+  <tabstop>blueSlider</tabstop>
+  <tabstop>paletaButton</tabstop>
+  <tabstop>sortirButton</tabstop>
+  <tabstop>colorHex</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>sortirButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>503</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>blueSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>blueDisplay</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>238</x>
+     <y>158</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>511</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>greenSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>greenDisplay</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>231</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>511</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>redSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>redDisplay</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>221</x>
+     <y>37</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>503</x>
+     <y>36</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

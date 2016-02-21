@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>445</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>445</width>
+    <height>567</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>445</width>
+    <height>567</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Quadrat màgic</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="titol">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:blue;</string>
+    </property>
+    <property name="text">
+     <string>Quadrat màgic 3X3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calcula">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>435</y>
+      <width>190</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>190</width>
+      <height>28</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>190</width>
+      <height>28</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Calcula</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="missatges">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>400</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>400</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>400</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>435</y>
+      <width>190</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>190</width>
+      <height>28</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>190</width>
+      <height>28</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>401</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="cel_0_0">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="cel_0_1">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="cel_0_2">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="cel_0_3">
+       <property name="minimumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(236,236,236);
+border: 1px solid rgb(204,204,204);
+border-radius: 3px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::NoTextInteraction</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="cel_1_0">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="cel_1_1">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLineEdit" name="cel_1_2">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLabel" name="cel_1_3">
+       <property name="minimumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(236,236,236);
+border: 1px solid rgb(204,204,204);
+border-radius: 3px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::NoTextInteraction</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="cel_2_0">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="cel_2_1">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="cel_2_2">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>75</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="maxLength">
+        <number>1</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLabel" name="cel_2_3">
+       <property name="minimumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(236,236,236);
+border: 1px solid rgb(204,204,204);
+border-radius: 3px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::NoTextInteraction</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="D2">
+       <property name="minimumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(236,236,236);
+border: 1px solid rgb(204,204,204);
+border-radius: 3px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::NoTextInteraction</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="cel_3_0">
+       <property name="minimumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(236,236,236);
+border: 1px solid rgb(204,204,204);
+border-radius: 3px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::NoTextInteraction</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="cel_3_1">
+       <property name="minimumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(236,236,236);
+border: 1px solid rgb(204,204,204);
+border-radius: 3px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::NoTextInteraction</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="cel_3_2">
+       <property name="minimumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(236,236,236);
+border: 1px solid rgb(204,204,204);
+border-radius: 3px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::NoTextInteraction</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLabel" name="D1">
+       <property name="minimumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>73</width>
+         <height>73</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(236,236,236);
+border: 1px solid rgb(204,204,204);
+border-radius: 3px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="textInteractionFlags">
+        <set>Qt::NoTextInteraction</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>cel_0_0</tabstop>
+  <tabstop>cel_0_1</tabstop>
+  <tabstop>cel_0_2</tabstop>
+  <tabstop>cel_1_0</tabstop>
+  <tabstop>cel_1_1</tabstop>
+  <tabstop>cel_1_2</tabstop>
+  <tabstop>cel_2_0</tabstop>
+  <tabstop>cel_2_1</tabstop>
+  <tabstop>cel_2_2</tabstop>
+  <tabstop>calcula</tabstop>
+  <tabstop>reset</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

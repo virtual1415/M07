@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>394</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>394</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>394</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Formulari</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>580</width>
+      <height>332</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>580</width>
+      <height>332</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>580</width>
+      <height>332</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tabInsertar">
+     <attribute name="title">
+      <string>Desar</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>551</width>
+        <height>92</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelCognoms">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Cognoms*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelNom">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Nom*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelCorreu">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Correu electrònic*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="nom">
+         <property name="toolTip">
+          <string extracomment="La longitud màxima per a aquest camp és de 15 caràcters"/>
+         </property>
+         <property name="maxLength">
+          <number>15</number>
+         </property>
+         <property name="placeholderText">
+          <string extracomment="La longitud màxima per a aquest camp és de 15 caràcters">Introdueix el nom (màx. 15 caràcters)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="cognoms">
+         <property name="toolTip">
+          <string extracomment="La longitud màxima per a aquest camp és de 50 caràcters"/>
+         </property>
+         <property name="maxLength">
+          <number>50</number>
+         </property>
+         <property name="placeholderText">
+          <string extracomment="La longitud màxima per a aquest camp és de 50 caràcters">Introdueix els cognoms (màx. 50 caràcters)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="correu">
+         <property name="toolTip">
+          <string extracomment="La longitud màxima per a aquest camp és de 20 caràcters"/>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhEmailCharactersOnly</set>
+         </property>
+         <property name="maxLength">
+          <number>25</number>
+         </property>
+         <property name="placeholderText">
+          <string extracomment="La longitud màxima per a aquest camp és de 20 caràcters">Introdueix el correu electrònic (màx. 25 caràcters)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="buttonInsertar">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>180</y>
+        <width>90</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>90</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>&amp;Desar</string>
+      </property>
+      <property name="shortcut">
+       <string>Ctrl+D</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonReset">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>180</y>
+        <width>90</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>90</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>&amp;Buidar</string>
+      </property>
+      <property name="shortcut">
+       <string>Ctrl+B</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelInfo1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>551</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>551</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>551</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Tots els camps amb asterisc són obligatoris.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabLlegir">
+     <attribute name="title">
+      <string>Visualitzar</string>
+     </attribute>
+     <widget class="QTableView" name="tableLectura">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>554</width>
+        <height>212</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>554</width>
+        <height>212</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>554</width>
+        <height>212</height>
+       </size>
+      </property>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>100</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>25</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>25</number>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="buttonEsborrar">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>260</y>
+        <width>90</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>90</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>&amp;Esborrar</string>
+      </property>
+      <property name="shortcut">
+       <string>Ctrl+E</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonModificar">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>260</y>
+        <width>90</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>90</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>&amp;Modificar</string>
+      </property>
+      <property name="shortcut">
+       <string>Ctrl+M</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="filtre1">
+      <property name="geometry">
+       <rect>
+        <x>32</x>
+        <y>10</y>
+        <width>162</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>162</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>162</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="maxLength">
+       <number>15</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filtrar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonNeteja1">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>14</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>18</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>18</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="filtre2">
+      <property name="geometry">
+       <rect>
+        <x>202</x>
+        <y>10</y>
+        <width>162</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>162</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>162</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="maxLength">
+       <number>15</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filtrar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonNeteja2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>14</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>18</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>18</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="filtre3">
+      <property name="geometry">
+       <rect>
+        <x>372</x>
+        <y>10</y>
+        <width>162</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>162</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>162</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="maxLength">
+       <number>15</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filtrar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonNeteja3">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>14</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>18</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>18</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonFitxa">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>260</y>
+        <width>90</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>90</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>&amp;Fitxa</string>
+      </property>
+      <property name="shortcut">
+       <string>Ctrl+F</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

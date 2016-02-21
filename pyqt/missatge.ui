@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>515</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>515</width>
+    <height>485</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>515</width>
+    <height>485</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Exercici 9</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>490</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>490</width>
+      <height>400</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>490</width>
+      <height>400</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Missatge">
+     <attribute name="title">
+      <string>Missatge</string>
+     </attribute>
+     <widget class="QLineEdit" name="destinatari">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>451</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Insereix destinatari...</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="assumpte">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>451</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Insereix assumpte...</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="missatge">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>451</width>
+        <height>211</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bEnviar">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>330</y>
+        <width>90</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enviar</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="minimumSize">
+    <size>
+     <width>515</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>515</width>
+     <height>22</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>515</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAplicaci">
+    <property name="title">
+     <string>&amp;Aplicació</string>
+    </property>
+    <addaction name="actionSortir"/>
+   </widget>
+   <widget class="QMenu" name="menuMissatge">
+    <property name="title">
+     <string>Missatge</string>
+    </property>
+    <addaction name="actionEsborra"/>
+    <addaction name="actionEnvia"/>
+   </widget>
+   <addaction name="menuAplicaci"/>
+   <addaction name="menuMissatge"/>
+  </widget>
+  <action name="actionSortir">
+   <property name="text">
+    <string>&amp;Sortir</string>
+   </property>
+  </action>
+  <action name="actionEsborra">
+   <property name="text">
+    <string>&amp;Esborra</string>
+   </property>
+  </action>
+  <action name="actionEnvia">
+   <property name="text">
+    <string>E&amp;nvia</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
